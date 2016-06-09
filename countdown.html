@@ -1,14 +1,54 @@
 <html>
 <head>
-	<title>COUNTDOWNt</title>
+	<meta charset="UTF-8">	
+	<meta name="author" content="Thorsten Freimann">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<title>COUNTDOWNt</title>	
 	<script type='text/javascript' src='countdown.js'></script>
+	<style>
+	* {
+		font-family: 'Open Sans', sans-serif;
+	}
+		
+		.beschriftung {
+			font-size : 2em;
+		}
+		
+		.links, .rechts, .mitte {
+			text-align : center;
+			display : inline-block;
+		}
+		.links {
+			width : 40%;
+			font-size : 2em;
+			
+			
+		}
+		.mitte {
+			width : 10%;
+			font-size : 2em;					
+			vertical-align: text-bottom;
+
+		}
+		.rechts {
+			width : 40%;
+			font-size : 2em;		
+
+		}
+		
+
+	</style>
 </head>
 <body onload="countdown();">
 	<h1>COUNTDOWN</h1>
 	<div id="countdown_div">Hier steht der Countdown...</div>
 	<p>bis zur Europameisterschaft 2016</p>
-	<img alt="Frankreich" src="fr.png"> vs
-	<img alt="Rumänien" src="ro.png"> <br>
-	Frankreich Rumänien
+	
+		<img class="links" alt="Frankreich" src="fr.png"> 
+		<span class="mitte">vs</span>
+		<img class ="rechts" alt="Rumänien" src="ro.png"> <br>	
+		<span class="links">Frankreich</span>
+		<span class="mitte"></span>
+		<span class="rechts">Rumänien</span>
 </body>
 </html>
